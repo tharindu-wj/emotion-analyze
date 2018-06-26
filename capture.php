@@ -197,7 +197,7 @@
 
 
                                     // Replace <Subscription Key> with your valid subscription key.
-                                    var subscriptionKey = "11657122db844c01aff5e448826e21c0";
+                                    var subscriptionKey = "b7c3c9ed2d5e47f5b26567cd28f2dfbc";
 
                                     // NOTE: You must use the same region in your REST call as you used to
                                     // obtain your subscription keys. For example, if you obtained your
