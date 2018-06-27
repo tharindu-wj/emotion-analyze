@@ -265,7 +265,18 @@
                                                     dataType: 'json',
                                                 })
                                                     .done(function (data){
-                                                        disableLoader();
+                                                        // Show formatted JSON on webpage.
+                                                        $("#responseTextArea").val(JSON.stringify(data, null, 2));
+
+                                                        $.ajax({
+                                                            type: "post",
+                                                            url: "app/emotion.php",
+                                                            data: {
+                                                                action: 'enable',
+                                                                face: data,
+                                                                stress: stress_avg
+                                                            },
+                                                            dataType: 'json',
                                                     });
 
                                             })
