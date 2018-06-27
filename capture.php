@@ -166,7 +166,7 @@
                     <!-- Code to handle taking the snapshot and displaying it locally -->
                     <script language="JavaScript">
                         function take_snapshot() {
-                            setLoader()
+                            setLoader();
 
                             var form_stress =  $("#stress_form");
                             var form_data_arr = form_stress.serializeArray();
@@ -255,10 +255,8 @@
                                                     face: data,
                                                     stress: stress_avg
                                                 },
-                                                dataType: 'json',
-                                                success: function{
-                                                    disableLoader();
-                                                }
+                                                dataType: 'json'
+
 
                                             });
                                         })
@@ -278,7 +276,7 @@
 
 
                         }
-
+                        disableLoader();
                         function setLoader() {
                             jQuery(".wrap-forms-loader").show();
                         }
