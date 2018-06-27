@@ -1,6 +1,6 @@
 <!-- Header-->
 <?php include 'header.php'; ?>
-<?php if(isset($_SESSION['user'])) { ?>
+<?php //if(isset($_SESSION['user'])) { ?>
 <body class="fixed-nav sticky-footer bg-dark" id="page-top">
 <!-- Navigation-->
 <?php include 'navigation.php'; ?>
@@ -30,7 +30,6 @@
                         ?>
 
                         <tr>
-                            <th>Name</th>
                             <th>Captured</th>
                             <th>Stress Average</th>
                             <th>anger</th>
@@ -45,7 +44,6 @@
                         </thead>
                         <tfoot>
                         <tr>
-                            <th>Name</th>
                             <th>Captured</th>
                             <th>Stress Average</th>
                             <th>anger</th>
@@ -65,7 +63,6 @@
                         while($row = mysqli_fetch_assoc($result)) {
                             //var_dump($row);?>
                             <tr>
-                                <th><?php echo $row['name']; ?></th>
                                 <th><?php echo $row['captured_at']; ?></th>
                                 <th><?php echo $row['stress_avg']; ?></th>
                                 <th><?php echo $row['anger']; ?></th>
@@ -102,6 +99,6 @@
     <script src="js/sb-admin-datatables.min.js"></script>
 </div>
 </body>
-<?php }
- else {header('location:login.php');} ?>
+<?php //}
+// else {header('location:login.php');} ?>
 </html>

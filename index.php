@@ -1,6 +1,6 @@
 <!-- Header-->
 <?php include 'header.php'; ?>
-<?php if(isset($_SESSION['user'])) { ?>
+<?php //if(isset($_SESSION['user'])) { ?>
 <body class="fixed-nav sticky-footer bg-dark" id="page-top">
   <!-- Navigation-->
   <?php include 'navigation.php'; ?>
@@ -53,6 +53,6 @@
   <?php include 'footer.php'; ?>
   </div>
 </body>
-<?php }
- else {header('location:login.php');} ?>
+<?php //}
+// else {header('location:login.php');} ?>
 </html>

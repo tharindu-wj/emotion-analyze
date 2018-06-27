@@ -1,6 +1,6 @@
 <!-- Header-->
 <?php include 'header.php'; ?>
-<?php if (isset($_SESSION['user'])) { ?>
+<?php //if (isset($_SESSION['user'])) { ?>
     <body class="fixed-nav sticky-footer bg-dark" id="page-top">
     <!-- Navigation-->
     <?php include 'navigation.php'; ?>
@@ -15,7 +15,6 @@
             <!--Form Section-->
             <div class="row">
                 <div class="col-xl-12 col-sm-12 mb-12">
-                    <?php echo $_SESSION['user']; ?>
                     <h1>Enter a number from the sliding scale below, which best describes you</h1>
                     <p>STRONGLY DISAGREE 1,2,3,4 | AGREE SOMEWHAT 5,6,7 | STRONGLY AGREE 8,9,10</p>
                 </div>
@@ -336,7 +335,8 @@
             <?php include 'footer.php'; ?>
     </div>
     </body>
-<?php } else {
-    header('location:login.php');
-} ?>
+<?php
+ // } else {
+//    header('location:login.php');
+//} ?>
 </html>

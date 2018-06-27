@@ -5,7 +5,7 @@ if (isset($_POST['face'])) :
     $data = $_POST['face'];
     $action = $_POST['action'];
     $stress = $_POST['stress'];
-    $user = $_SESSION['user'];
+    $user = 1; //$_SESSION['user'];
 
     $face_id = $data['0']['faceId'];
     $emotions = $data['0']['faceAttributes']['emotion'];
