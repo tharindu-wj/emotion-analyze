@@ -18,6 +18,26 @@
                 <div class="table-responsive">
                     <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                         <thead>
+                        <?php
+                        include 'app/connection.php';
+                        $sql = '
+                        SELECT *
+                        FROM face_details
+                        INNER JOIN users ON face_details.user = users.id;';
+
+                        $result = mysqli_query($con, $sql);
+
+                        if (mysqli_num_rows($result) > 0) {
+                            // output data of each row
+                            while($row = mysqli_fetch_assoc($result)) {
+                                var_dump($row);
+                            }
+                        } else {
+                            echo "0 results";
+                        }
+
+                        ?>
+
                         <tr>
                             <th>Name</th>
                             <th>Position</th>

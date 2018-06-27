@@ -44,31 +44,31 @@ if (isset($_POST['face'])) :
     echo "Connected successfully";
 
 
-    $sql_table = "
-    CREATE TABLE `face_details` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `faceId` varchar(255) NOT NULL,
-  `user` int(11) NOT NULL,
-  `stress_avg` float NOT NULL,
-  `anger` float NOT NULL,
-  `contempt` float NOT NULL,
-  `disgust` float NOT NULL,
-  `fear` float NOT NULL,
-  `happiness` float NOT NULL,
-  `neutral` float NOT NULL,
-  `sadness` float NOT NULL,
-  `surprise` float NOT NULL,
-  `captured_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
-  PRIMARY KEY  (`id`)
-   FOREIGN KEY (`user`) REFERENCES `users` (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-    ";
-
-    if (mysqli_query($conn, $sql_table)) {
-        echo "Table Created";
-    } else {
-        echo "Error: " . $sql_table . "<br>" . mysqli_error($conn);
-    }
+//    $sql_table = "
+//    CREATE TABLE `face_details` (
+//  `id` int(11) NOT NULL AUTO_INCREMENT,
+//  `faceId` varchar(255) NOT NULL,
+//  `user` int(11) NOT NULL,
+//  `stress_avg` float NOT NULL,
+//  `anger` float NOT NULL,
+//  `contempt` float NOT NULL,
+//  `disgust` float NOT NULL,
+//  `fear` float NOT NULL,
+//  `happiness` float NOT NULL,
+//  `neutral` float NOT NULL,
+//  `sadness` float NOT NULL,
+//  `surprise` float NOT NULL,
+//  `captured_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+//  PRIMARY KEY  (`id`)
+//   FOREIGN KEY (`user`) REFERENCES `users` (`id`)
+//) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+//    ";
+//
+//    if (mysqli_query($conn, $sql_table)) {
+//        echo "Table Created";
+//    } else {
+//        echo "Error: " . $sql_table . "<br>" . mysqli_error($conn);
+//    }
 
 
     $sql = "INSERT INTO face_details ( faceId, user, stress_avg, anger, contempt, disgust, fear, happiness, neutral, sadness, surprise ) 

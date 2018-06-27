@@ -41,7 +41,7 @@ function create_user_table(){
 
 if(isset($_POST['regUser']))
 {
-    create_user_table();
+    //create_user_table();
     echo "uSer";
 
     $pssword = $_POST['psswrd'];
@@ -83,6 +83,7 @@ if(isset($_POST["edit"])){
         "contact" => $_POST['contact'],
         "password" => $hashedPW,
         "salt" => $salt,
+        "status" => 0,
         "subjects" => $_POST['subject']
     );
     if($obj->update_record("user", $where, $myarray)){
