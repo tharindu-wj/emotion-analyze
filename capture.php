@@ -261,6 +261,9 @@
                                                         stress: stress_avg
                                                     },
                                                     dataType: 'json',
+                                                    success: function (data){
+                                                        alert();
+                                                    }
                                                 })
 
                                             },
@@ -275,7 +278,7 @@
                                                 alert(errorString);
                                             },
                                         })
-                                        
+
                                     });
                                 });
 
