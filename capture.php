@@ -166,7 +166,6 @@
                     <!-- Code to handle taking the snapshot and displaying it locally -->
                     <script language="JavaScript">
                         function take_snapshot() {
-                            //setLoader();
 
                             var form_stress =  $("#stress_form");
                             var form_data_arr = form_stress.serializeArray();
@@ -257,7 +256,6 @@
                                                 },
                                                 dataType: 'json'
 
-
                                             });
                                         })
 
@@ -275,14 +273,6 @@
                             } );
 
 
-                        }
-                        //disableLoader();
-                        function setLoader() {
-                            jQuery(".wrap-forms-loader").show();
-                        }
-
-                        function disableLoader() {
-                            jQuery(".wrap-forms-loader").hide();
                         }
                     </script>
 
@@ -307,20 +297,6 @@
         <!-- End Content-->
 
     </div>
-    <div class="wrap-forms-loader"></div>
-    <style>
-        .wrap-forms-loader {
-            position: fixed;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            top: 0;
-            display: none;
-            background-color: rgba(0, 0, 0, 0.5);
-            z-index: 999999999;
-        }
-    </style>
-
     <!-- Footer-->
     <?php include 'footer.php'; ?>
 </div>
