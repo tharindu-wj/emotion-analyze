@@ -282,6 +282,7 @@
 
 
                             }
+                            disableLoader();
 
                             function setLoader() {
                                 jQuery(".wrap-forms-loader").show();
