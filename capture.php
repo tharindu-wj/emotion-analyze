@@ -249,36 +249,23 @@
                                             // Request body.
                                             data: '{"url": ' + '"' + sourceImageUrl + '"}',
                                             success: function (data) {
+                                                disableLoader();
                                                 // Show formatted JSON on webpage.
-                                                $("#responseTextArea").val(JSON.stringify(data, null, 2));
-
-                                                $.ajax({
-                                                    type: "post",
-                                                    url: "app/emotion.php",
-                                                    data: {
-                                                        action: 'enable',
-                                                        face: data,
-                                                        stress: stress_avg
-                                                    },
-                                                    dataType: 'json',
-                                                    success: function (data){
-                                                        $("#responseTextArea").val(JSON.stringify(data, null, 2));
-
-                                                        $.ajax({
-                                                            type: "post",
-                                                            url: "app/emotion.php",
-                                                            data: {
-                                                                action: 'enable',
-                                                                face: data,
-                                                                stress: stress_avg
-                                                            },
-                                                            dataType: 'json',
-                                                            success: function (data){
-
-                                                            }
-                                                        })
-                                                    }
-                                                })
+                                                // $("#responseTextArea").val(JSON.stringify(data, null, 2));
+                                                //
+                                                // $.ajax({
+                                                //     type: "post",
+                                                //     url: "app/emotion.php",
+                                                //     data: {
+                                                //         action: 'enable',
+                                                //         face: data,
+                                                //         stress: stress_avg
+                                                //     },
+                                                //     dataType: 'json',
+                                                //     success: function (data){
+                                                //
+                                                //     }
+                                                // })
 
                                             },
                                             error: function (jqXHR, textStatus, errorThrown) {
@@ -290,8 +277,8 @@
                                                         jQuery.parseJSON(jqXHR.responseText).message :
                                                         jQuery.parseJSON(jqXHR.responseText).error.message;
                                                 alert(errorString);
-                                            }
-                                        });
+                                            },
+                                        })
 
                                     });
                                 });
