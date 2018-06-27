@@ -263,10 +263,11 @@
                                                         stress: stress_avg
                                                     },
                                                     dataType: 'json',
+                                                    success: function (data) {
+                                                        alert();
+                                                    }
                                                 })
-                                                    .done(function (data) {
-                                                       alert();
-                                                    })
+
                                             })
 
                                             .fail(function (jqXHR, textStatus, errorThrown) {
