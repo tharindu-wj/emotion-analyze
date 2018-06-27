@@ -150,7 +150,7 @@
                 <div class="col-xl-6 col-sm-6 mb-6">
                     <div class="container-fluid">
                         <div id="results" style="display: none;">Your captured image will appear here...</div>
-
+                        <p style="color: #28a745;">* This web page access your web camera only to identify your facial expression. This page does not keep your images and this is only  to collect data regarding stress related emotional expressions of your face.  You can view the collected data by clicking on data list.</p>
                         <div id="my_camera"></div>
 
                         <!-- First, include the Webcam.js JavaScript Library -->
@@ -168,7 +168,7 @@
                         </script>
 
                         <!-- A button for taking snaps -->
-                        <form>
+                        <form style="margin-top: 10px;">
                             <input type=button value="Capture" class="btn btn-success btn-lg" onClick="take_snapshot()">
                         </form>
 
