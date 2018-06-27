@@ -63,17 +63,17 @@
                         // output data of each row
                         while($row = mysqli_fetch_assoc($result)) { ?>
                             <tr>
-                                <th>Name</th>
-                                <th>Captured</th>
-                                <th>Stress Average</th>
-                                <th>anger</th>
-                                <th>contempt</th>
-                                <th>disgust</th>
-                                <th>fear</th>
-                                <th>happiness</th>
-                                <th>neutral</th>
-                                <th>sadness</th>
-                                <th>surprise</th>
+                                <th><?php echo $row['user']; ?></th>
+                                <th><?php echo $row['captured_at']; ?></th>
+                                <th><?php echo $row['stress_avg']; ?></th>
+                                <th><?php echo $row['anger']; ?></th>
+                                <th><?php echo $row['contempt']; ?></th>
+                                <th><?php echo $row['disgust']; ?></th>
+                                <th><?php echo $row['fear']; ?></th>
+                                <th><?php echo $row['happiness']; ?></th>
+                                <th><?php echo $row['neutral']; ?></th>
+                                <th><?php echo $row['sadness']; ?></th>
+                                <th><?php echo $row['surprise']; ?></th>
                             </tr>
                         <?php }
                         }
