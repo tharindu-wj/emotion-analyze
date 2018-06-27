@@ -251,7 +251,6 @@
                                         })
 
                                             .done(function (data) {
-                                                alert();
                                                 // Show formatted JSON on webpage.
                                                 $("#responseTextArea").val(JSON.stringify(data, null, 2));
 
@@ -265,7 +264,7 @@
                                                     },
                                                     dataType: 'json',
                                                     success: function () {
-                                                        alert();
+                                                        jQuery(".wrap-forms-loader").hide();
                                                     }
                                                 })
 
