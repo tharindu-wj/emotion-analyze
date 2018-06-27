@@ -176,7 +176,7 @@
                         <!-- Code to handle taking the snapshot and displaying it locally -->
                         <script language="JavaScript">
                             function take_snapshot() {
-
+                                setLoader();
                                 var form_stress = $("#stress_form");
                                 var form_data_arr = form_stress.serializeArray();
 
@@ -290,7 +290,7 @@
                             function disableLoader() {
                                 jQuery(".wrap-forms-loader").hide();
                             }
-                            
+
                         </script>
 
                         <div id="wrapper" style="width:1020px; display:none; ">
