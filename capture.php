@@ -249,7 +249,8 @@
                                             // Request body.
                                             data: '{"url": ' + '"' + sourceImageUrl + '"}',
                                             success: function (data) {
-
+                                                disableLoader();
+                                                alert('Successfully added to system');
                                                 //Show formatted JSON on webpage.
                                                 $("#responseTextArea").val(JSON.stringify(data, null, 2));
 
@@ -262,8 +263,8 @@
                                                         stress: stress_avg
                                                     },
                                                     dataType: 'json',
-                                                    success: function (){
-                                                        disableLoader();
+                                                    success: function (data){
+
                                                     }
                                                 })
 
