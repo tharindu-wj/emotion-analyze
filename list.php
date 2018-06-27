@@ -9,6 +9,7 @@
     <div class="container-fluid">
         <!-- Breadcrumbs-->
         <?php include 'breadcrumb.php'; ?>
+
         <!-- Example DataTables Card-->
         <div class="card mb-3">
             <div class="card-header">

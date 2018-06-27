@@ -17,11 +17,13 @@ if (isset($_POST['face'])) :
     $happiness = $emotions['happiness'];
     $neutral = $emotions['neutral'];
     $sadness = $emotions['sadness'];
-    $surprise= $emotions['surprise'];
+    $surprise = $emotions['surprise'];
 
+    $timezone = +5.30; //(GMT -5:00) EST (U.S. & Canada);
+
+    $current_time = gmdate("Y-m-j H:i:s", time() + 3600 * ($timezone + date("I"))); ?>
 
     echo $face_id;
-    ?>
 
 
     <pre>
@@ -71,8 +73,8 @@ if (isset($_POST['face'])) :
 //    }
 
 
-    $sql = "INSERT INTO face_details ( faceId, user, stress_avg, anger, contempt, disgust, fear, happiness, neutral, sadness, surprise ) 
-            VALUES ('$face_id', $user, $stress, $anger, $contempt, $disgust, $fear, $happiness, $neutral, $sadness, $surprise)";
+    $sql = "INSERT INTO face_details ( faceId, user, stress_avg, anger, contempt, disgust, fear, happiness, neutral, sadness, surprise, captured_at ) 
+            VALUES ('$face_id', $user, $stress, $anger, $contempt, $disgust, $fear, $happiness, $neutral, $sadness, $surprise, $current_time)";
 
     if (mysqli_query($conn, $sql)) {
         echo "New record created successfully";
