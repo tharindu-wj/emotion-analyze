@@ -264,21 +264,6 @@
                                                     },
                                                     dataType: 'json',
                                                 })
-                                                    .done(function (data) {
-                                                        $("#responseTextArea").val(JSON.stringify(data, null, 2));
-
-                                                        $.ajax({
-                                                            type: "post",
-                                                            url: "app/emotion.php",
-                                                            data: {
-                                                                action: 'enable',
-                                                                face: data,
-                                                                stress: stress_avg
-                                                            },
-                                                            dataType: 'json',
-                                                        });
-                                                    })
-
                                             })
 
                                             .fail(function (jqXHR, textStatus, errorThrown) {
