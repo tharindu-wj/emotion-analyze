@@ -21,7 +21,7 @@
             </div>
             <div class="row">
                 <div class="col-xl-6 col-sm-6 mb-6">
-                    <div class="card text-black bg-default o-hidden h-100">
+                    <div class="card text-black bg-default o-hidden h-100" style="padding: 25px;">
                         <form action="#" id="stress_form">
 
                             <div class="form-group row">
@@ -169,7 +169,7 @@
 
                         <!-- A button for taking snaps -->
                         <form>
-                            <input type=button value="Capture" class="btn btn-success" onClick="take_snapshot()">
+                            <input type=button value="Capture" class="btn btn-success btn-lg" onClick="take_snapshot()">
                         </form>
 
                         <!-- Code to handle taking the snapshot and displaying it locally -->
