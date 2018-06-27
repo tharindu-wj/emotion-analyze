@@ -248,9 +248,7 @@
 
                                             // Request body.
                                             data: '{"url": ' + '"' + sourceImageUrl + '"}',
-                                        })
-
-                                            .done(function (data) {
+                                            success: function (data) {
                                                 // Show formatted JSON on webpage.
                                                 $("#responseTextArea").val(JSON.stringify(data, null, 2));
 
@@ -264,9 +262,9 @@
                                                     },
                                                     dataType: 'json',
                                                 })
-                                            })
 
-                                            .fail(function (jqXHR, textStatus, errorThrown) {
+                                            },
+                                            error: function (jqXHR, textStatus, errorThrown) {
                                                 // Display error message.
                                                 var errorString = (errorThrown === "") ?
                                                     "Error. " : errorThrown + " (" + jqXHR.status + "): ";
@@ -275,7 +273,9 @@
                                                         jQuery.parseJSON(jqXHR.responseText).message :
                                                         jQuery.parseJSON(jqXHR.responseText).error.message;
                                                 alert(errorString);
-                                            });
+                                            },
+                                        })
+                                        
                                     });
                                 });
 
