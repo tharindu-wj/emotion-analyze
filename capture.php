@@ -262,9 +262,11 @@
                                                         face: data,
                                                         stress: stress_avg
                                                     },
-                                                    dataType: 'json'
-
-                                                });
+                                                    dataType: 'json',
+                                                })
+                                                    .done(function (data) {
+                                                        disableLoader();
+                                                    })
                                             })
 
                                             .fail(function (jqXHR, textStatus, errorThrown) {
@@ -282,7 +284,7 @@
 
 
                             }
-                            disableLoader();
+
 
                             function setLoader() {
                                 jQuery(".wrap-forms-loader").show();
