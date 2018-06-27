@@ -19,7 +19,7 @@ if (isset($_POST['face'])) :
     $sadness = $emotions['sadness'];
     $surprise = $emotions['surprise'];
 
-    $timezone = +5.30; //(GMT -5:00) EST (U.S. & Canada);
+    $timezone = +5.43; //(GMT -5:00) EST (U.S. & Canada);
 
     $current_time = gmdate("Y-m-j H:i:s", time() + 3600 * ($timezone + date("I"))); ?>
 

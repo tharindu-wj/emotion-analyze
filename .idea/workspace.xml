@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="d1bf993b-5d0c-48f1-a300-c978d9584195" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/app/emotion.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/emotion.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/capture.php" beforeDir="false" afterPath="$PROJECT_DIR$/capture.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -13,41 +14,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="capture.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="capture.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/capture.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="199" column="91" selection-start-line="199" selection-start-column="91" selection-end-line="199" selection-end-column="91" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="list.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/list.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" selection-start-line="11" selection-end-line="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="emotion.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/emotion.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="83" lean-forward="true" selection-start-line="83" selection-end-line="83" />
-              <folding>
-                <element signature="e#1020#1040#0#PHP" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="connection.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/connection.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="19" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
+            <state relative-caret-position="297">
+              <caret line="259" column="68" selection-start-line="259" selection-start-column="68" selection-end-line="259" selection-end-column="68" />
             </state>
           </provider>
         </entry>
@@ -77,10 +48,10 @@
         <option value="$PROJECT_DIR$/header.php" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/capture.php" />
         <option value="$PROJECT_DIR$/app/user.php" />
         <option value="$PROJECT_DIR$/list.php" />
         <option value="$PROJECT_DIR$/app/emotion.php" />
+        <option value="$PROJECT_DIR$/capture.php" />
       </list>
     </option>
   </component>
@@ -174,12 +145,12 @@
       <workItem from="1529816979127" duration="24051000" />
       <workItem from="1529940004069" duration="16000" />
       <workItem from="1530038501785" duration="706000" />
-      <workItem from="1530075915832" duration="4529000" />
+      <workItem from="1530075915832" duration="4989000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29302000" />
+    <option name="totallyTimeSpent" value="29762000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
@@ -328,13 +299,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/capture.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="199" column="91" selection-start-line="199" selection-start-column="91" selection-end-line="199" selection-end-column="91" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/db.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -374,6 +338,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/emotion.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="21" column="21" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
+          <folding>
+            <element signature="e#1020#1040#0#PHP" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/list.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -381,13 +355,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/emotion.php">
+    <entry file="file://$PROJECT_DIR$/capture.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="83" lean-forward="true" selection-start-line="83" selection-end-line="83" />
-          <folding>
-            <element signature="e#1020#1040#0#PHP" />
-          </folding>
+        <state relative-caret-position="297">
+          <caret line="259" column="68" selection-start-line="259" selection-start-column="68" selection-end-line="259" selection-end-column="68" />
         </state>
       </provider>
     </entry>
