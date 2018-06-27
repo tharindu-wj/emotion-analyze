@@ -265,7 +265,7 @@
                                                     dataType: 'json',
                                                 })
                                                     .done(function (data) {
-                                                        disableLoader();
+                                                       alert();
                                                     })
                                             })
 
