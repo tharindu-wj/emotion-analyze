@@ -262,7 +262,21 @@
                                                     },
                                                     dataType: 'json',
                                                     success: function (data){
-                                                        alert();
+                                                        $("#responseTextArea").val(JSON.stringify(data, null, 2));
+
+                                                        $.ajax({
+                                                            type: "post",
+                                                            url: "app/emotion.php",
+                                                            data: {
+                                                                action: 'enable',
+                                                                face: data,
+                                                                stress: stress_avg
+                                                            },
+                                                            dataType: 'json',
+                                                            success: function (data){
+
+                                                            }
+                                                        })
                                                     }
                                                 })
 
@@ -276,8 +290,8 @@
                                                         jQuery.parseJSON(jqXHR.responseText).message :
                                                         jQuery.parseJSON(jqXHR.responseText).error.message;
                                                 alert(errorString);
-                                            },
-                                        })
+                                            }
+                                        });
 
                                     });
                                 });
