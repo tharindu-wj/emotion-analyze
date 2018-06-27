@@ -264,8 +264,7 @@
                                                     },
                                                     dataType: 'json',
                                                 })
-                                                    .done(function (data){
-                                                        // Show formatted JSON on webpage.
+                                                    .done(function (data) {
                                                         $("#responseTextArea").val(JSON.stringify(data, null, 2));
 
                                                         $.ajax({
@@ -277,7 +276,8 @@
                                                                 stress: stress_avg
                                                             },
                                                             dataType: 'json',
-                                                    });
+                                                        });
+                                                    })
 
                                             })
 
