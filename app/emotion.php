@@ -74,7 +74,7 @@ if (isset($_POST['face'])) :
 
 
     $sql = "INSERT INTO face_details ( faceId, user, stress_avg, anger, contempt, disgust, fear, happiness, neutral, sadness, surprise, captured_at ) 
-            VALUES ('$face_id', $user, $stress, $anger, $contempt, $disgust, $fear, $happiness, $neutral, $sadness, $surprise, $current_time)";
+            VALUES ('$face_id', $user, $stress, $anger, $contempt, $disgust, $fear, $happiness, $neutral, $sadness, $surprise, '$current_time')";
 
     if (mysqli_query($conn, $sql)) {
         echo "New record created successfully";

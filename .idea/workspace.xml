@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="d1bf993b-5d0c-48f1-a300-c978d9584195" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/app/emotion.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/emotion.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/list.php" beforeDir="false" afterPath="$PROJECT_DIR$/list.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -35,8 +34,8 @@
       <file leaf-file-name="emotion.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/emotion.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="76" column="140" selection-start-line="76" selection-start-column="140" selection-end-line="76" selection-end-column="140" />
+            <state relative-caret-position="442">
+              <caret line="83" lean-forward="true" selection-start-line="83" selection-end-line="83" />
               <folding>
                 <element signature="e#1020#1040#0#PHP" />
               </folding>
@@ -175,12 +174,12 @@
       <workItem from="1529816979127" duration="24051000" />
       <workItem from="1529940004069" duration="16000" />
       <workItem from="1530038501785" duration="706000" />
-      <workItem from="1530075915832" duration="4095000" />
+      <workItem from="1530075915832" duration="4529000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28868000" />
+    <option name="totallyTimeSpent" value="29302000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
@@ -384,8 +383,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/emotion.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="76" column="140" selection-start-line="76" selection-start-column="140" selection-end-line="76" selection-end-column="140" />
+        <state relative-caret-position="442">
+          <caret line="83" lean-forward="true" selection-start-line="83" selection-end-line="83" />
           <folding>
             <element signature="e#1020#1040#0#PHP" />
           </folding>
