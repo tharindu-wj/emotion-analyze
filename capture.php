@@ -206,7 +206,7 @@
 
 
                                         // Replace <Subscription Key> with your valid subscription key.
-                                        var subscriptionKey = "b7c3c9ed2d5e47f5b26567cd28f2dfbc";
+                                        var subscriptionKey = "0bfad846053f46c4b91bcac4490dd976";
 
                                         // NOTE: You must use the same region in your REST call as you used to
                                         // obtain your subscription keys. For example, if you obtained your
@@ -217,7 +217,7 @@
                                         // If you use a free trial subscription key, you shouldn't need to change
                                         // this region.
                                         var uriBase =
-                                            "https://westcentralus.api.cognitive.microsoft.com/face/v1.0/detect";
+                                            "https://australiaeast.api.cognitive.microsoft.com/face/v1.0/detect";
 
                                         // Request parameters.
                                         var params = {
