@@ -25,8 +25,7 @@
                         <form action="#" id="stress_form">
 
                             <div class="form-group row">
-                                <label for="example-text-input" class="col-10 col-form-label">1. I can't honestly say
-                                    what I really think or get things of my chest at work</label>
+                                <label for="example-text-input" class="col-10 col-form-label">1. I can not honestly say what I really think or get things from my chest at work.</label>
                                 <div class="col-2">
                                     <select class="form-control" id="exampleSelect1" name="q1">
                                         <?php for ($x = 1; $x <= 10; $x++) : ?>
@@ -37,8 +36,7 @@
                             </div>
 
                             <div class="form-group row">
-                                <label for="example-text-input" class="col-10 col-form-label">2. My job has lot of
-                                    responsibility,but I don't have much authority</label>
+                                <label for="example-text-input" class="col-10 col-form-label">2. My job has lot of responsibility,but I don't have much authority.</label>
                                 <div class="col-2">
                                     <select class="form-control" id="exampleSelect1" name="q2">
                                         <?php for ($x = 1; $x <= 10; $x++) : ?>
@@ -49,8 +47,7 @@
                             </div>
 
                             <div class="form-group row">
-                                <label for="example-text-input" class="col-10 col-form-label">3. I could usually do a
-                                    much better job if I were given more time</label>
+                                <label for="example-text-input" class="col-10 col-form-label">3. I could usually do a much better job if I were given more time.</label>
                                 <div class="col-2">
                                     <select class="form-control" id="exampleSelect1" name="q3">
                                         <?php for ($x = 1; $x <= 10; $x++) : ?>
@@ -61,8 +58,7 @@
                             </div>
 
                             <div class="form-group row">
-                                <label for="example-text-input" class="col-10 col-form-label">4. I seldom recieve
-                                    adequate acknoledgement or appreciation when my work is really good</label>
+                                <label for="example-text-input" class="col-10 col-form-label">4. I rarely recieve adequate acknoledgement or appreciation when my work is really good.</label>
                                 <div class="col-2">
                                     <select class="form-control" id="exampleSelect1" name="q4">
                                         <?php for ($x = 1; $x <= 10; $x++) : ?>
@@ -73,8 +69,7 @@
                             </div>
 
                             <div class="form-group row">
-                                <label for="example-text-input" class="col-10 col-form-label">5. In General, I am not
-                                    particularly proud or satisfied with my job</label>
+                                <label for="example-text-input" class="col-10 col-form-label">5. In General, I am not particularly proud or satisfied with my job.</label>
                                 <div class="col-2">
                                     <select class="form-control" id="exampleSelect1" name="q5">
                                         <?php for ($x = 1; $x <= 10; $x++) : ?>
@@ -85,8 +80,7 @@
                             </div>
 
                             <div class="form-group row">
-                                <label for="example-text-input" class="col-10 col-form-label">6. I have the impression
-                                    that I am repeatedly picked on or discreminated against work</label>
+                                <label for="example-text-input" class="col-10 col-form-label">6. I have the impression that I am repeatedly discreminated against work.</label>
                                 <div class="col-2">
                                     <select class="form-control" id="exampleSelect1" name="q6">
                                         <?php for ($x = 1; $x <= 10; $x++) : ?>
@@ -97,8 +91,7 @@
                             </div>
 
                             <div class="form-group row">
-                                <label for="example-text-input" class="col-10 col-form-label">7. My work place
-                                    environment is not very pleasent or safe</label>
+                                <label for="example-text-input" class="col-10 col-form-label">7. My work place environment is not very pleasent or safe.</label>
                                 <div class="col-2">
                                     <select class="form-control" id="exampleSelect1" name="q7">
                                         <?php for ($x = 1; $x <= 10; $x++) : ?>
@@ -109,8 +102,7 @@
                             </div>
 
                             <div class="form-group row">
-                                <label for="example-text-input" class="col-10 col-form-label">8. My job often interferes
-                                    with my family and social pbligations,or personal needs</label>
+                                <label for="example-text-input" class="col-10 col-form-label">8. My job often interferes with my family and social obligations,or personal needs.</label>
                                 <div class="col-2">
                                     <select class="form-control" id="exampleSelect1" name="q8">
                                         <?php for ($x = 1; $x <= 10; $x++) : ?>
@@ -121,8 +113,7 @@
                             </div>
 
                             <div class="form-group row">
-                                <label for="example-text-input" class="col-10 col-form-label">9. I tend to have frequent
-                                    argument with superier,or corwarkers or customers</label>
+                                <label for="example-text-input" class="col-10 col-form-label">9. I tend to have frequent argument with superier,or co workers or customers.</label>
                                 <div class="col-2">
                                     <select class="form-control" id="exampleSelect1" name="q9">
                                         <?php for ($x = 1; $x <= 10; $x++) : ?>
@@ -133,8 +124,7 @@
                             </div>
 
                             <div class="form-group row">
-                                <label for="example-text-input" class="col-10 col-form-label">10. Most of the time I
-                                    feel I have very little control over my life at work</label>
+                                <label for="example-text-input" class="col-10 col-form-label">10. Most of the time I feel I have very little control over my life at work.</label>
                                 <div class="col-2">
                                     <select class="form-control" id="exampleSelect1" name="q10">
                                         <?php for ($x = 1; $x <= 10; $x++) : ?>
@@ -193,7 +183,7 @@
                                 // take snapshot and get image data
                                 Webcam.snap(function (data_uri) {
                                     // display results in page
-
+                                    force_flash: true
                                     document.getElementById('results').innerHTML =
                                         '<h2>Processing:</h2>';
 
